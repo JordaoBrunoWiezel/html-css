@@ -1,0 +1,123 @@
+HTML E CSS 
+
+www.youtube.com/jordao -> url (uniform resource locator) 
+youtube.com -> domínio
+.com ->tld (top level domain)
+.com /.edu/ .gov / .store -> gtld
+.br/ .us -> cctld
+www -> subdomínio
+/jordao -> caminho
+
+exemplo:
+gustavoguanabara.github.io ->url
+gustavoguanabara -> subdomínio
+GitHub.com -> domínio
+.io -> tld
+
+Domínio -> nome único /pago anualmente/ vários tld's
+Hospedeiro -> espaço para armazenar arquivos /pago mensalmente / espaço, memória, recursos
+
+DNS -> Domain name system -> lista telefônica de domínios, pega o domínio e procura o ip associado no servidor
+
+HTML -> Hypertext Markup Language (linguagem de marcação de hipertexto)
+- conteúdo -> textos /imagens /vídeos /tabelas
+CSS -> Cascading style sheets (folhas de estilo em cascata)
+- design -> cores /sombras /tamanhos /posicionamento
+Javascript
+- interações -> menus /animações / popups/ validações
+
+
+
+Estilo em HTML
+<abertura de tag> conteúdo <fechamento de tag>
+<h1> Exemplo de titulo </h1>
+<p> Exemplo de parágrafo </p>
+<img src="foto.png" alt="exemplo de foto">
+<abertura de tag/ conteúdo / paramento /valor >
+
+
+Estilo em CSS
+h1 (seletor) { 
+	(declaração)
+	font-family: Arial;
+	font-size: 20pt;
+	color (propriedade) : blue; (valor)
+}
+
+
+Estrututa básica de documentação em HTML
+
+<!DOCTYPE html> (vou desenvolver um site em html5)
+<html lang="pt-br"> (vai possuir um conteudo em portugues)
+	<head>
+		<meta charset="UTF-8"> (meu site vai ser compativel com caracteres de UTF-8) 
+		<meta charset="viewport"
+		content="width=device-width, initial-scale=1.0"> (visulização em escala de 100%
+		<title>Document</title>
+	</head>
+	<body>
+		<h1>Olá, Mundo!</h1>
+	</body>
+</html>
+
+
+
+Para pegar imagens sem copyright no google:
+
+google imagens -> ferramentas -> direitos de uso -> Marcadas para utilização com modificação
+ou
+imagens -> ferramentas -> direitos de uso -> Marcadas para utilização (sem modificação)
+
+Sites para imagens de domínio publico:
+UnSplash
+Pexels
+FreePik
+Rawpixel
+Pixabay
+Libreshot
+Wikimedia Commons
+
+
+Para o photoshop usamos o GIMP KKKKK
+
+Jpeg -> Permite compactar fotos (pouco espaço)
+PNG -> Permite fundo transparente
+
+
+Em um site, a largura máxima de uma imagem é 1500
+Resolução pode deixar nos 72, ou até menos, uns 50, pra cima já é muito
+
+
+Favicon -> Ícone no titulo do navegador 
+Procurar um favicon -> iconarchive.com
+Criar um favicon -> favicon.cc
+Criar uma imagem para favicon/texto para favicon/emoji para favicon -> favicon.io
+
+
+Existem muitas tags no html4 que não existem no html5, tomar cuidado
+HTML -> Significado/ Semântica
+CSS -> Estilo/ Forma
+
+
+Quanto mais usuários forem embora do seu site, aumenta a sua taxa de bouce rate (taxa de rejeição), da valor ou desvalorizar o seu site, feito pelo próprio google
+
+
+Pegar áudios sem copyright: Acessa o painel de controle do yt -> biblioteca de áudio -> atribuições
+
+
+Compatibilidade para áudio: MP3, WAV, OGG
+WAV é extremamente pesado, evitar :)
+
+Compatibilidade  dos vídeos: Os formatos mais utilizados são: MP4 (MP4V), WEBM (bem leves), OGV
+
+Muitos navegadores são compativeis com determinados formatos:
+Ex: Safari não é compativel com OGV
+
+Site: HandBrake - Converter videos, reformata para video leves e qualidade razoaveis, própia para web 
+
+Acima de 1080p NÂO SE hospeda dentro do própio site
+
+O problema de hospedar videos, é que quanto maior o trafego de pessoas no seu site, maior será o trafego de dados, maior será o consumo, e mais caro será
+
+
+Estilo Inline ->  Cada tag colocar um estilo, Técnica Horrivel

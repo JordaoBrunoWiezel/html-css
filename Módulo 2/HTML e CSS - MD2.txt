@@ -1,0 +1,173 @@
+Psicologia e harmonia das cores:
+
+Olha o pdf do Guanabara, muito bom 
+file:///C:/Users/Jord%C3%A3o%20Bruno/Downloads/13%20-%20Cores.pdf
+
+
+
+Representando Cores:
+
+As cores são formadas por formadas por um conjunto de vermelho, verde e azul
+EX: 00(vermelho)00(verde)FF(azul - max)  -> 00 00 255
+
+RGBA -> red, green, blue, alfa -> Monitores
+
+Características de cores:
+HSL - Matiz, saturação e luminosidade
+
+Curiosidade: CMYK (ciano, magenta, amarelo e preto)-> Impressoras
+
+Circulo Cromático:
+
+Cores Primárias (triângulo)
+-> Amarelo, Vermelho e Azul
+
+Cores Secundárias (triângulo ao contrário)
+-> Laranja, Violeta(Roxo) e Verde
+
+Cores Terciárias (todas as outras cores - hexágono)
+Misturas  das Primárias e Secundárias
+Ex: Amarelo-esverdeado /amarelo-alaranjado/vermelho-alaranjado/vermelho-arroxeado/azul->arroxeado/azul->esverdeado
+De forma grosseira os tons pastéis
+
+Temperatura de Cores:
+Divide um linha cortando o amarelo com o amarelo-esverdeado, e o violeta com o vermelho-arroxeado 
+Lado esquerdo ->  Cores Frias
+Lado direito -> Cores Quentes
+
+OBS: Todas essas classificações criam a Harmonia :)
+
+OBS2: Recomenda uma paleta de 3 a 5 cores (além do preto e branco)
+
+
+Tipos de combinações de Cores:
+
+Cores Complementares (cores que mais contrastam)
+Só traçar uma reta: Ex: Violeta e Amarelo
+
+Cores Análogas (cores que são similares)
+Só pegar as cores vizinhas: Ex: violeta e azul->arroxeado e vermelho->arroxeado
+
+Obs: Cores Análogas e uma Complementar: vizinhas + uma reta
+
+Cores Análogas Relacionadas
+Duas cores vizinhas (Análogas) (pular uma cor) e a terceira cor
+
+Cores Intercaladas: Pular 1 cor por vez 
+
+Cores Triádicas: Pular 3 cores por vez
+
+Cores em Quadrado: Pular 2 cores por vez
+
+Cores Tetrádicas: Escolhe duas cores e seus respectivos complementares
+
+Monocromia: Escolhe uma cor, e muda a saturação e o brilho (degradê)
+
+
+
+Paletas de Cores:
+
+Color.adobe.com -> Ajuda a escolher as paletas
+Extrair temas -> Pega uma logo e ele faz as paletas de cores
+Extrair gradiente: Criar um degradê
+
+paletton.com -> Da um exemplo de site com sua paleta de cores
+
+Coolors -> Da paletas aleatórias
+
+
+Capturar uma cor da tela: Extensão CollorZilla
+
+
+
+
+
+
+
+TIPOGRAFIA:
+Olha o pdf do Guanabara, muito bom 
+file:///C:/Users/Jord%C3%A3o%20Bruno/Downloads/14%20-%20Fontes.pdf
+
+O x (minúsculo) é o ponto de partida de todas as fontes
+
+Glifo - letra 
+Conjunto de glifo forma uma fonte
+Nem todas as fontes tem família tipográfica (mesma fonte 
+de maneiras diferentes)
+
+Categorias de Fontes:
+. Serifadas (com serifa)
+. Sans-Seriif (Textos muitos longos)
+. Monoespaçadas (todos tem o mesmo espaço)
+. Handwriting (simula a escritura a mão)
+. display (Carnaval)
+
+CSS Web safe font Combinations
+Exemplo: Arial, Helvética, Sans-Serif
+
+Fonte gnérica: Sans-Serif / Serif / Monospce
+
+Google Fonts
+select this style -> Embed -> @import (sem o style)
+
+Dafont para + fontes
+
+
+Capturar fontes de um site: Extensão Fonts Ninja
+
+Capturar fontes em imagens: Sites: WhatsFontIs.com/FontSquirrel.com/MyFonts.com
+
+
+
+ID E CLASS
+
+Não posso usar o mesmo id em mais de 1 tag
+Se quisermos modificar mais de uma tag da mesma forma, usamos Class
+
+
+
+
+Modelo de caixas
+
+Height -> altura
+Wight -> largura
+Border -> borda (linha circunda o conteúdo)
+padding -> acochoamento ou preenchimento (espaço pra dentro)
+margin -> margem (espaço fora)
+outline -> contorno ou traçado
+
+
+box-level:
+div
+h1-h6
+p
+main
+header
+nav
+article
+aside
+footer
+form
+vídeo
+
+inline-box:
+span
+a
+code
+small
+Strong
+em
+sup-sub
+label
+button
+input
+select
+
+User agent -> navegador q esta exibindo seu conteúdo
+
+display-block -> elemento do tipo box-level
+
+
+
+
+Planejar um site (MUITO IMPORTANTE): MokeFlow

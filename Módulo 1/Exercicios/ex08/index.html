@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    
+    <h1>Usando links externos</h1>    
+    <p>Você pode  acessar o meu <a href="https://github.com/gustavoguanabara/html-css/blob/master/aulas-pdf/10%20-%20Liga%C3%A7%C3%B5es%20em%20toda%20parte.pdf" target="_blank" rel="external">repositório público no GitHub</a></p> <!-- Para abrir o link em uma outra aba, usa o target, o rel é para avisar o refenreciado a um link externo-->
+    <p>Você tamém pode acessar o meu <a href="https://www.cursoemvideo.com/curso/html5-css3-modulo1/aulas/modulo-1-2/modulos/capitulo-10-aula-1-links-e-ancoras-em-html5/">curso gratuito</a></p>
+    
+    
+    <h1>Usando links internos</h2>
+    <p>Esta é a primeira página do site. Se você quiser, pode acessar também a minha <a href="pag2.html" target="_self" rel="next">segunda página</a></p><!-- Para abrir o link na mesma aba do meu própio sevidor, posso usar o target _self-->
+    <p>Você também pode acessar a nossa <a href="noticias/pag3.html" rel="next">página de notícias</a></p>
+
+
+    <h1>Linka para download</h1>
+    <ul>
+    <p>Esta é a primeira página do site. Se você quiser, pode acessar também a minha <a href="pag2.html" target="_self" rel="next">segunda página</a></p><!-- Para abrir o link na mesma aba do meu própio sevidor, posso usar o target, o rel é para avisar o referenciado a um link interno-->
+        <li><a href="livro/meulivro.pdf" download="meulivro.pdf" type="application/pdf">Baixar o livro em PDF</a></li> <!-- Type Solicita o dowload do arquivo em alguns navegadores-->
+    <p>Esta é a primeira página do site. Se você quiser, pode acessar também a minha <a href="pag2.html" target="_self" rel="next">segunda página</a></p><!-- Para abrir o link na mesma aba do meu própio sevidor, posso usar o target, o rel é para avisar o-->
+        <li><a href="livro/meulivro.zip" download="meulivro.zip" type="application/zip">Baixar o livro compactado em ZIP</a></li>
+        <li><a href="#">Link vazio</a></li>
+        <li><a href=""></a></li>
+    </ul>
+</body>
+</html>
