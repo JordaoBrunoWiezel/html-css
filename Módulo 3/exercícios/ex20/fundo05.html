@@ -3,17 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tamanho da imagem</title>
+    <title>Fundo Fixo de Tela</title>
     <style>
         body{
             height: 100vh;
+            /*
             background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
-            background-position: center top;
+            background-position: center center;
             background-repeat: no-repeat;
             background-size: cover; 
-            /*contain -> seja 100% exibida, não havendo corte, sempre mostra a imagem toda
-              cover-> cobre a tela inteira, mesmo q seja necessario cortar*/
+            /*contain -> seja 100% exibida, não havendo corte, sempre mostra a imagem toda, mesmo se for necessario redimensionar
+              cover-> cobre a tela inteira, mesmo q seja necessario cortar sem redimensionar*/
+            
+              /*Se eu quiser usar a mesma iamgem para todo o fundo de tela*/
+            /*background-attachment: fixed; /*Fixed -> deixa a imagem estatica, mesmo dando scroll no conteudo / Scroll -> o fundo rola junto com o conteudo*/
+            
+            
+            /*Shorthand - background
+            color-> image-> position-> repeat-> [size X (não usa)]-> attachment
+            */
+            background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed;
+            background-size: cover;
             }
 
         main{
@@ -29,6 +40,15 @@
 <body>
     <main>
         <h1>Teste de Imagem de Fundo</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit voluptas in reiciendis debitis obcaecati. Corrupti, quasi voluptate? Consequatur nulla officiis, libero temporibus, perspiciatis facere saepe ut quis incidunt molestias reprehenderit.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit doloremque molestias earum culpa blanditiis sit consequuntur, cupiditate aperiam ipsam, deleniti quo temporibus, impedit laborum esse eligendi pariatur quas sequi! Quidem?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, enim temporibus similique dicta dolore adipisci voluptates iste ducimus laudantium, cumque quas qui laborum deleniti sit odio nihil cum doloremque nemo.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit voluptas in reiciendis debitis obcaecati. Corrupti, quasi voluptate? Consequatur nulla officiis, libero temporibus, perspiciatis facere saepe ut quis incidunt molestias reprehenderit.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit doloremque molestias earum culpa blanditiis sit consequuntur, cupiditate aperiam ipsam, deleniti quo temporibus, impedit laborum esse eligendi pariatur quas sequi! Quidem?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, enim temporibus similique dicta dolore adipisci voluptates iste ducimus laudantium, cumque quas qui laborum deleniti sit odio nihil cum doloremque nemo.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit voluptas in reiciendis debitis obcaecati. Corrupti, quasi voluptate? Consequatur nulla officiis, libero temporibus, perspiciatis facere saepe ut quis incidunt molestias reprehenderit.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit doloremque molestias earum culpa blanditiis sit consequuntur, cupiditate aperiam ipsam, deleniti quo temporibus, impedit laborum esse eligendi pariatur quas sequi! Quidem?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, enim temporibus similique dicta dolore adipisci voluptates iste ducimus laudantium, cumque quas qui laborum deleniti sit odio nihil cum doloremque nemo.</p>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit voluptas in reiciendis debitis obcaecati. Corrupti, quasi voluptate? Consequatur nulla officiis, libero temporibus, perspiciatis facere saepe ut quis incidunt molestias reprehenderit.</p>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit doloremque molestias earum culpa blanditiis sit consequuntur, cupiditate aperiam ipsam, deleniti quo temporibus, impedit laborum esse eligendi pariatur quas sequi! Quidem?</p>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, enim temporibus similique dicta dolore adipisci voluptates iste ducimus laudantium, cumque quas qui laborum deleniti sit odio nihil cum doloremque nemo.</p>
