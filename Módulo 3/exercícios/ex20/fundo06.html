@@ -7,27 +7,28 @@
     <style>
         #container{
             background-image: url('imagens/target001.png');
-            background-size: 100%;
+            background-size: 100% 100%;
 
             position: relative; /*todo o posicionamento de um box no html por padrão é relativo */
-            height: 96vhpx;
+            height: 96vh;
             background-color: purple;
             padding: 10px;
         }
-        
+
         #conteudo {
             background-image: url('imagens/target001.png');
-            background-size: 100%;
+            background-size: 100% 100%;
 
             position: absolute;
             height: 200px;
             width: 400px;
             background-color: yellow;
 
+            /*deixa a ponta superior esquerda no centro*/
             left: 50%;
             top: 50%;
 
-            transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); /*Deixa no centro*/
         }
     </style>
 </head>
