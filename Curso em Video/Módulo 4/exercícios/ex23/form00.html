@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="off"> <!-- action -> essa ação vai ser dispara quando clicar no botao submit, os dados do formulario vao ser enviados para o action/ autocomplete oof -> tira o os sugeridos do google-->
+        <p>
+            <label 
+            for="inome"> Nome: <!-- Label/Etiqueta para o id inome, liga o Nome a caixa(input)-->
+            </label>
+            <input type="text" name="nome" id="inome">
+        </p> 
+        <p>
+            <label 
+            for="isobrenome">Sobrenome: 
+            </label>
+            <input type="text" name="sobrenome" id="isobrenome"> <!--name mais util para html e php, id mais util para JavaScpit e o uso do label-->
+        </p> 
+
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+
+    <!--Por padrão o html usa o método GET para envio de formulários (coloca na url), campos não sens iveis, maximo de 3000 bytes-->
+    <!--Post não coloca na url os dados da formulário, mas no inspecionar consegue achar os dados, campos sensiveis, envio de fotos, envio de arquivos-->
+</body>
+</html>
