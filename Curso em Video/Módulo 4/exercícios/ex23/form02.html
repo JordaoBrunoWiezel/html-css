@@ -7,10 +7,10 @@
 </head>
 <body>
     <h1>Teste de Formulário</h1>
-    <form action="cadastro.php" method="get" autocomplete="on"></form>
+    <form action="cadastro.php" method="get" autocomplete="on">
     <p>
         <label for="inome">Nome: </label>
-        <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome completo" autocomplete="name" required>
+        <input type="text" name="nome" id="inome" maxlength="30" placeholder="Nome completo" autocomplete="name" required>
     </p>
     <p>
        <label for="imedia">Média: </label>
@@ -21,19 +21,20 @@
     </p>
     <p>
         <label for="imes"> Peréodo Letivo: </label>
-        <input type="month" name="mes" id="imes"> <!--input month, põe o mes e o ano-->
+        <input type="month" name="mes" id="imes" value="2020-07"> <!--input month, põe o mes e o ano-->
     </p>
     <p>
         <label for="idia"> Dia da Prova: </label> 
-        <input type="date" name="dia" id="idia" value="2020-07-14"> <!--input date, põe a data completa-->
+        <input type="date" name="dia" id="idia"> <!--input date, põe a data completa-->
     </p>
     <p>
-        <label for="ihora">Horário da Prova</label>
+        <label for="ihora">Horário da Prova: </label>
         <input type="time" name="hora" id="ihora"> <!--input time, põe a hora-->
     </p>
     <p>
         <input type="submit" value="Enviar">
         <input type="reset" value="Limpar">
     </p>
+</form>
 </body>
 </html>
