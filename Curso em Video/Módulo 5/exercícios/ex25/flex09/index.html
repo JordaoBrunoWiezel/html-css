@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.conteiner {
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.item {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 250px;
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+
+    </style>
+</head>
+<body class="conteiner">
+        <div class="item" >A</div>
+        <div class="item" >B</div>
+        <div class="item" >C</div>
+</body>
+</html>
+
+
+<!--
+flex-items (Filho)
+
+Importante estar nowrap
+
+Padrão:
+Flex-shrink: 1 (para encolher)
+flex-grow: 0 (para aumentar)
+1 = permite / 0 = recusa
+
+Alguns exemplos
+
+Flex-grow:
+Se haver apenas um elemento com flex-grow: 1 no meio, apenas esse elemento ira crescer
+Se haver um elemento com 2, esse elemento irá crescer o dobro do elemento 1
+Se haver dois elementos seguidos com 2, eles irão crescer na mesma proporcão
+
+O mesmo para o Flex-shrink, mas para encolher
+
+
+-->

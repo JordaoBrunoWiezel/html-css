@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.conteiner {
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.item {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 20px;
+        }
+
+        div#cxA {
+            /*flex-shrink: 0;
+            flex-grow: 1;
+            flex-basis: 200px;*/
+
+            flex: 1 0 200px;
+        }
+
+        div#cxB {
+            /*flex-shrink: 1;
+            flex-grow: 1;
+            flex-basis: 150px;*/
+
+            flex: 1 1 150px;
+        }
+
+        div#cxC {
+            /*flex-shrink: 8;
+            flex-grow: 1;
+            flex-basis: auto;*/
+
+            flex: 1 8 auto;
+        }
+    </style>
+</head>
+<body class="conteiner">
+        <div class="item" id="cxA">A</div>
+        <div class="item" id="cxB">B</div>
+        <div class="item" id="cxC">C</div>
+</body>
+</html>
+
+
+<!--
+flex-items (Filho)
+
+Shorthand: flex: flex-grow + flex-shrink + flex-basis
+Padrão: flex: 0 1 auto ou flex: initial
+
+flex: 0 0 auto ou flex: none (deixar os elementos não flexiveis, não podem crescer, não podem diminiur e o tamanho deles depende do tamanho do conteudo)
+
+flex: 1 1 auto ou flex: auto (deixar os elementos flexiveis, podem crescer, podem diminiur e o limite vai ser o tamanho natural do conteudo)
+
+flex: 1 ou flex: 2 ou flex: 3... ou flex: 3 1 auto (Representa o flex-grow, o flex-shrink e flow-basis são os valores padronizados)
+-->
