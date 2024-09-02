@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.conteiner {
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        div.item {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>
+
+<!--
+(Pai/conteiner)
+
+Direções (Flex-direction):
+Padrão: flex-direction: row (deitado da esquerda para direita)
+Reverso: flex-direction: row-reverse (deitado da direita para esquerda)
+Verticais: flex-direction: column (em pé de cima para baixo)
+Reverso: flex-direction: column-reverse (em pé de baixo para cima)
+
+Eixos (axis):
+Padrão: main-axis (main-start / main-end)
+Transversal: cross-axis (cross-start / cross-end)
+
+
+Observações:
+Os eixos podem inverter dependendo das direções
+
+Exemplo:
+Se for flex-direction: row, o main-axis vai ser da esquerda para a direita, e o cross-axis vai ser de cima para baixo
+Se for flex-direction: row-inverse. o main-axis vai ser da direita para a esquerda, e o cross-axis vai ser de cima para baixo
+Se for flex-direction: column, o main-axis vai ser de cima para baixo, e o cross-axis vai ser da esquerda para direita
+Se for flex-direction: column-inverse, o main-axis vai ser de baixo para cima, e o cross-axis vai ser da esquerda para direita
+-->

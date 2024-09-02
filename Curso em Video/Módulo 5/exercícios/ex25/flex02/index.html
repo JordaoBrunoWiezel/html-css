@@ -1,0 +1,47 @@
+Exemplo de bloco <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.conteiner {
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        div.item {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+            flex: auto; /*Esse flex: auto junto com o flex-flow: row wrap faz com que quando quebre a linha, o ultimo filho fique por inteiro na linha de baixo
+            Sempre completa toda a caixa*/
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">Exemplo de bloco A</div>
+        <div class="item">Exemplo de bloco B</div>
+        <div class="item">Exemplo de bloco C</div>
+        <div class="item">Exemplo de bloco D</div>
+        <div class="item">Exemplo de bloco E</div>
+        <div class="item">Exemplo de bloco F</div>
+        <div class="item">Exemplo de bloco G</div>
+    </div>
+</body>
+</html>
+
+<!--(Pai/conteiner)
+
+Flex-wrap (empacotamento/encapsulamento):
+Padrão: flex-wrap: nowrap (não quebra os conteudos) (o encolhimento dos itens dentro de um flex box, depende da capacidade do encolhimento dele, depende do conteudo)
+flex-wrap: wrap (quebra os conteudos, vai pra baixo, o ultimo filho segue o sentido cross-axis (sentido transversal))
+flex-wrap: wrap-reverse (quebra o conteudo, vai pra cima, no sentido oposto ao cross-axis)
+
+Flex-flow = flex-direction + flex-wrap:
+Padrão: flex-flow: row nowrap
+-->

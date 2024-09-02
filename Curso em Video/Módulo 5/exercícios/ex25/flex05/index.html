@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+<style>
+    div.conteiner {
+        background-color: lightsalmon;
+
+        display: flex;
+        flex-flow: row wrap;
+        height: 400px;
+        align-items: flex-start;
+    }
+
+    div.item {
+        background-color: lightblue;
+        border: 1px solid black;
+        text-align: center;
+        padding: 40px;
+    }
+</style>
+</head>
+<body>
+<div class="conteiner">
+    <div class="item">A</div>
+    <div class="item">B</div>
+    <div class="item">C</div>
+    <div class="item">D</div>
+    <div class="item">E</div>
+    <div class="item">F</div>
+    <div class="item">G</div>
+</div>
+</body>
+</html>
+
+
+<!--
+Relembrando:
+justify content -> alinha os itens dentro do eixo principal
+align items -> alinha os itens dentro do eixo tranversal
+
+New:
+align content-> alinha os elementos no eixo tranversal quando eles estão empacotados
+
+
+Align Content:
+Padrão: align-content: stretch (pega a dimensão inteira (altura) e divide pelo numeros de linhas (no caso 2 linhas) em partes iguais), 
+depois pega a dimensao do cross-axis de todos os items e estica)
+align-content: flex-start (põe tudo grudado no cross-start(no caso em cima) e o espaço em branco fica no cross-end)
+align-content: flex-end (põe tudo grudado no cross-end(no caso em baixo) e o espaço em branco fica no cross-start)
+align-content: center (põe os itens alinahdos no centro, e os espaços brancos no cross-start e cross-end)
+align-content: space-between (Pega os primeiros elementos e põe no cross-start e os ultimos elementos põe no cross-end, o espaço no meio divide com os outros itens)
+align-content: space-evenly (espaço no cross-start e cross-end e coloca todos os elementos separados pelo mesmo espaçamento)
+align-content: space-around (divide o cross-axis (eixo transversal) em partes iguais e coloca os itens centralizado no meio desses espaços)
+-->
